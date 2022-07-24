@@ -1,0 +1,44 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;600&display=swap");
+
+$primary-color: #fdf5df;
+$secondary-color: #5ebec4;
+$tertiary-color: #f92c85;
+$text-color: rgb(0, 0, 0);
+$nav-height: 50px;
+
+html,
+body {
+  font-family: "Montserrat", sans-serif;
+  box-sizing: border-box;
+  border: none;
+}
+
+body {
+  color: $text-color;
+  background-image: url("./media/images/butterfly-background.jpg");
+  background-size: 200px;
+  background-repeat: repeat;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: unset;
+}
+
+.container {
+  padding: 10px;
+}
+
+button {
+  color: unset;
+}
+
+p {
+  font-size: 1.3rem;
+  font-weight: 600;
+}

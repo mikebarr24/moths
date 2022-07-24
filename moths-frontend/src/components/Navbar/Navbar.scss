@@ -1,0 +1,62 @@
+@import "../../config";
+
+.navbar {
+  height: $nav-height;
+  position: fixed;
+  left: 0;
+  width: 100vw;
+  top: 0;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.386);
+  background-color: $secondary-color;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 0.5rem;
+  .logo {
+    color: $tertiary-color;
+    font-size: 1.3rem;
+  }
+  .nav-links {
+    display: flex;
+    position: fixed;
+    background-color: $secondary-color;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    transform: translateY(-100%);
+    transition: all 300ms ease-in-out;
+    ul {
+      margin: auto;
+    }
+    li {
+      text-decoration: none;
+      list-style: none;
+      font-size: 2rem;
+      font-weight: 600;
+      text-align: center;
+      margin: 2rem 0;
+    }
+    &.expanded {
+      transform: translateY(0);
+    }
+  }
+  .burger-button {
+    display: flex;
+    position: absolute;
+    top: 0.3rem;
+    right: 1.5rem;
+    flex-direction: column;
+    justify-content: center;
+    width: 35px;
+    height: 40px;
+    span {
+      display: block;
+      width: 100%;
+      height: 3px;
+      background-color: black;
+      margin: 4px 0;
+      border-radius: 10px;
+    }
+  }
+}

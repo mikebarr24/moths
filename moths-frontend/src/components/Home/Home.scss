@@ -1,0 +1,20 @@
+@import "../../config";
+
+.home {
+  min-height: calc(100vh - $nav-height);
+  margin-top: $nav-height;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  .home-title {
+    font-size: 4rem;
+  }
+  .home-today-button {
+    background-color: $tertiary-color;
+    border: none;
+    padding: 1rem 3rem;
+    border-radius: 100px;
+    font-size: 2rem;
+  }
+}
