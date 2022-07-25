@@ -23,6 +23,7 @@ export default function LoginForm(props) {
       details.password === user.password
     ) {
       console.log("Logged in");
+      setError({ message: "" });
     } else {
       setError({ message: "Username or Password is Incorrect" });
     }
@@ -39,6 +40,7 @@ export default function LoginForm(props) {
           value={details.username}
           name="username"
           onChange={changeHandle}
+          required={true}
         />
         <input
           type="password"
@@ -47,11 +49,14 @@ export default function LoginForm(props) {
           value={details.password}
           onChange={changeHandle}
           name="password"
+          required={true}
         />
-        <button>Login </button>
-        <button type="button">Sign Up</button>
+        <div className="login-buttons">
+          <button>Login </button>
+          <button type="button">Sign Up</button>
+        </div>
       </form>
-      {error.message && error.message}
+      {error.message && <p className="login-error-message">{error.message}</p>}
     </div>
   );
 }
