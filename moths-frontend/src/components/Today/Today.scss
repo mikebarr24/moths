@@ -1,0 +1,6 @@
+@import "../../config";
+
+.today {
+  margin-top: $nav-height;
+  min-height: calc(100vh - $nav-height);
+}
