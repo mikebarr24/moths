@@ -22,7 +22,6 @@
     background-color: $secondary-color;
     background-image: url("../../media/images/moths-dropdown.png");
     background-repeat: no-repeat;
-    background-position: bottom;
     background-size: cover;
     top: 0;
     bottom: 0;
@@ -36,10 +35,10 @@
     li {
       text-decoration: none;
       list-style: none;
-      font-size: 2rem;
+      font-size: 2.5rem;
       font-weight: 600;
       text-align: center;
-      margin: 2rem 0;
+      margin: 3rem 0;
     }
     &.expanded {
       transform: translateY(0);
