@@ -2,13 +2,17 @@
 
 .home {
   min-height: calc(100vh - $nav-height);
-  margin-top: $nav-height;
   text-align: center;
+  margin-top: $nav-height;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   .home-title {
-    font-size: 4rem;
+    font-size: 3rem;
+  }
+  .home-image {
+    width: 70%;
+    margin: 0 auto;
   }
   .home-today-button {
     background-color: $tertiary-color;

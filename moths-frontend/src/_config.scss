@@ -9,7 +9,6 @@ $nav-height: 50px;
 html,
 body {
   font-family: "Montserrat", sans-serif;
-  box-sizing: border-box;
   border: none;
 }
 
@@ -21,6 +20,7 @@ body {
 }
 
 * {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
 }

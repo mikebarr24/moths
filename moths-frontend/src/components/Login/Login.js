@@ -1,11 +1,14 @@
 import "./Login.scss";
 import LoginForm from "./LoginForm";
+import { ErrorBoundary } from "react-error-boundary";
+import ErrorFallback from "../../error/ErrorFallback";
 
 export default function Login(props) {
   return (
     <div className="login container">
-      <p>Login to your account to publish new finds.</p>
-      <LoginForm />
+      <ErrorBoundary fallback={<ErrorFallback />}>
+        <LoginForm className="login-form" />
+      </ErrorBoundary>
     </div>
   );
 }

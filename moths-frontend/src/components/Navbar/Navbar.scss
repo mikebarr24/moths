@@ -20,6 +20,10 @@
     display: flex;
     position: fixed;
     background-color: $secondary-color;
+    background-image: url("../../media/images/moths-dropdown.png");
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
     top: 0;
     bottom: 0;
     right: 0;

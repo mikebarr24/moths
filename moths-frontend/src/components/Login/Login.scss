@@ -1,5 +1,8 @@
 @import "../../config";
 
 .login {
+  min-height: calc(100vh - $nav-height);
   margin-top: $nav-height;
+  display: flex;
+  flex-direction: column;
 }
