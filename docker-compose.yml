@@ -1,0 +1,24 @@
+version: "3.9"
+services:
+  frontend:
+    build: ./moths-frontend
+    container_name: moths-frontend
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./moths-frontend:/app
+      - reactModules:/app/node_modules
+    stdin_open: true
+    tty: true
+  api:
+    build: ./moths-backend
+    container_name: moths-api
+    ports: 
+      - "3001:3001"
+    volumes: 
+      - ./moths-backend:/app
+      - apiModules:/app/node_modules
+
+volumes:
+  reactModules:
+  apiModules:
